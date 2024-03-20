@@ -1,0 +1,51 @@
+#divCard {
+    margin: 10px;
+    width: 300px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-image: url("https://i.pinimg.com/736x/8a/b1/e9/8ab1e97bc0439c2a03bb402d72c386fe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ffffff; /* Cambia el color del texto */
+    text-align: center;
+  }
+
+  #divCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Cambia la sombra al pasar el ratón por encima */
+}
+  
+  #divCard h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  #divCard img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-top: 10px;
+    object-fit: contain;
+  }
+
+  #rating {
+    color: gold;
+  }
+
+  #genres{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 12px;
+  }
+
+  #genre{
+    padding: 10px;
+    background-color: rgba(86, 133, 123, 0.726);
+    border-radius: 12px;
+    border: 1px solid black;
+    margin-left: 12px;
+  }
+  

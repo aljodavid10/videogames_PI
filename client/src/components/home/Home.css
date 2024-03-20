@@ -1,0 +1,44 @@
+.home {
+    margin: 0 auto;
+    background-image: url("https://i.pinimg.com/736x/f4/60/42/f4604287ddfd23208bb0d7676b60f3a3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Ajusta según sea necesario */
+  }
+
+  .filtros{
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+  
+  .custom-select {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px; /* Espaciado entre los select */
+    margin-top: 20px;
+  }
+  
+  /* Estilos para los select */
+  .custom-select select {
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde */
+    background-color: #fff; /* Color de fondo */
+    cursor: pointer; /* Cursor al pasar por encima */
+  }
+  
+  /* Estilos para los option */
+  .custom-select select option {
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cursor al pasar por encima */
+  }
+  
+  /* Estilos para los option al pasar por encima */
+  .custom-select select option:hover {
+    background-color: #f0f0f0; /* Cambia el color de fondo al pasar por encima */
+  }
+  

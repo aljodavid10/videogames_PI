@@ -1,0 +1,3 @@
+sudo mkdir -p /run/postgresql/
+sudo chown postgres:postgres /run/postgresql/
+sudo rc-service postgresql restart
