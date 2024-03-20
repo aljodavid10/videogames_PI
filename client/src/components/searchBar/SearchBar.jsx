@@ -21,9 +21,9 @@ function SearchBar(props) {
    }
   return (
     <div id="searchZone">
-       <input type='search' onChange={handleChange}
+       <button className='buscar' onClick={search} ><img src="../../../images/lupa_logo.png" alt="" /></button>
+       <input className='inputBuscar' type='search' onChange={handleChange}
        placeholder="Buscar videojuego:" value={name} onKeyDown={searchEnter}/>
-       <button onClick={search} >Buscar</button>
     </div>
  );
 }

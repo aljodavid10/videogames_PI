@@ -9,9 +9,10 @@ function Nav({ onSearch, onLoadHome }) {
 
   return (
     <div className='barraNavegacion'>
-      <SearchBar onSearch={onSearch} />
+      <img src="../../../images/logoNavBar.png" alt="" />
       <Link to='/home'><button className="Home" onClick={handleLoadHome}>Ver todos los videojuegos</button></Link>
       <Link to='/save'><button className="NewVideogame">Ingresar videojuego</button></Link>
+      <SearchBar onSearch={onSearch} />
     </div>
   )
 }

@@ -7,6 +7,8 @@
     margin-bottom: 20px; 
     color: #ccc;
     font-size: 3vh;
+    font-weight: bold; 
+    font-style: italic;
   }
   
   .titulo{
@@ -57,4 +59,3 @@
   .detail-section.genres li:before {
     content: '▸ ';
   }
-  

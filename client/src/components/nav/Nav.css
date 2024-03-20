@@ -1,38 +1,56 @@
 .barraNavegacion {
-    background-color: #270909; /* Fondo oscuro */
+    background-color: #594d69;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: antiquewhite;
+    position: sticky;
   }
   
   .barraNavegacion a {
     text-decoration: none;
   }
   
-  .barraNavegacion button {
+  .barraNavegacion .Home {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
-    background-color: #696969; /* Rojo F1 */
+    background-color: #c9b4b4;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   .barraNavegacion img {
-    height: 70px;
-    
+    height: 50px;
   }
 
-  .barraNavegacion button:hover {
-    background-color: #5e5e5e;
+  .barraNavegacion .Home:hover {
+    background-color: #a3a3a377;
   }
   
-  .barraNavegacion button:focus {
+  .barraNavegacion .Home:focus {
+    outline: none;
+    background-color: #a3a3a300;
+  }
+
+  .barraNavegacion .NewVideogame {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d4c7c7;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .barraNavegacion .NewVideogame:hover {
+    background-color: #a3a3a377;
+  }
+  
+  .barraNavegacion .NewVideogame:focus {
     outline: none;
   }
-
-  

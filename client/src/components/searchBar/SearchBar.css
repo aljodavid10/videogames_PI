@@ -1,0 +1,40 @@
+#searchZone{
+    margin-left: 12px;
+}
+
+.buscar{
+    background-color: rgba(240, 248, 255, 0);
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.buscar:hover {
+    border-bottom: 1px solid black;
+    border-color: grey;
+  }
+  
+  .buscar:focus {
+    outline: none;
+  }
+
+  .buscar img{
+    height: 20px;
+  }
+
+  .inputBuscar{
+    height: 30px;
+    width: 30vh;
+    border-radius: 12px;
+    background-color: #d4b6ff;
+  }
+
+  .inputBuscar:hover{
+    border: 1px solid blue;
+  }
+
+  .inputBuscar:focus{
+    background-color: azure;
+  }

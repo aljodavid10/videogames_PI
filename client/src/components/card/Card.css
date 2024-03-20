@@ -49,3 +49,8 @@
     margin-left: 12px;
   }
   
+
+p { 
+  font-weight: bold; 
+  font-style: italic;
+}

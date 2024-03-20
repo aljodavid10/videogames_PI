@@ -1,6 +1,6 @@
 .home {
     margin: 0 auto;
-    background-image: url("https://i.pinimg.com/736x/f4/60/42/f4604287ddfd23208bb0d7676b60f3a3.jpg");
+    background-color: #ccc;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -24,10 +24,10 @@
   
   /* Estilos para los select */
   .custom-select select {
+    
     padding: 10px 20px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    border: 1px solid #ccc; /* Borde */
-    background-color: #fff; /* Color de fondo */
+    border-bottom: 1px solid #020202; /* Borde */
+    background-color: #ffffff9c; /* Color de fondo */
     cursor: pointer; /* Cursor al pasar por encima */
   }
   
@@ -38,7 +38,7 @@
   }
   
   /* Estilos para los option al pasar por encima */
-  .custom-select select option:hover {
-    background-color: #f0f0f0; /* Cambia el color de fondo al pasar por encima */
+  .custom-select select:hover {
+    background-color: #dcafe5; /* Cambia el color de fondo al pasar por encima */
   }
   
