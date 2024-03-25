@@ -11,7 +11,8 @@ function Save() {
     release: '',
     genres: [],
     platforms: [],
-    rating: ""
+    rating: "",
+    devs:""
   });
   const URLPlatforms = 'http://localhost:3001/platforms';
   const URLGenres = 'http://localhost:3001/genres';
@@ -99,7 +100,8 @@ function Save() {
           release: '',
           genres: [],
           platforms: [],
-          rating:""
+          rating:"",
+          devs:""
         });
       } catch (error) {
         console.error('Error al crear el videojuego:', error.message);
@@ -192,6 +194,12 @@ function Save() {
         <label htmlFor="selectedPlatforms">Plataformas seleccionadas:</label>
         <label>-{videogame.platforms.join(', ')}</label>
 
+        <div className="form-group">
+          <label htmlFor="developers">Desarrolladores:</label>
+          <input type="text" id="developers" name="devs" value={videogame.devs} onChange={handleChange} />
+          {errors.genres && <span className="error">{errors.genres}</span>}
+        </div>
+        
 
         <button type="submit">CREAR NUEVO VIDEOJUEGO</button>
       </form>
@@ -203,6 +211,8 @@ function validation(data) {
 
   if (!data.name.trim()) {
     errors.name = 'El nombre es obligatorio';
+  }else if(data.name.length > 36){
+    errors.name = 'El nombre es demasiado largo.'
   }
 
   if (!data.description.trim()) {
@@ -225,6 +235,12 @@ function validation(data) {
 
   if (!Array.isArray(data.platforms) || data.platforms.length === 0) {
     errors.genres = 'Seleccionar al menos un género es obligatorio';
+  }
+
+  if (!data.devs.trim()) {
+    errors.name = 'El nombre de los desarrolladores es obligatorio';
+  }else if(data.devs.length > 36){
+    errors.name = 'El nombre es demasiado largo.'
   }
 
   return errors;

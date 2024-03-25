@@ -17,7 +17,7 @@ function Card({id, name, image, genres, rating}) {
   return (
     <Link to={`/detail/${id}`}>
       <div id="divCard">
-        <img src={image} alt={name}/>
+        <img className="imagen" src={image} alt={name}/>
         <h2>{name}</h2>
         <div id="rating">{renderStars()} {rating}</div>
         <div id="genres">

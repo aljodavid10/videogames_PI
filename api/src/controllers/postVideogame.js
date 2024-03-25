@@ -2,9 +2,9 @@ const { Videogame, Genre, Platform } = require('../db.js');
 
 const postVideogame = async (req, res) =>{
     try {
-        const { name, description, image, release, rating, platforms, genres } = req.body;
+        const { name, description, image, release, rating, platforms, genres, devs } = req.body;
 
-        if( ![ name, description, image, release, rating, platforms, genres ].every(Boolean) || (rating < 0 && rating > 5)) 
+        if( ![ name, description, image, release, rating, platforms, genres, devs ].every(Boolean) || (rating < 0 && rating > 5)) 
             return res.status(401).json({message: "Faltan datos"});
 
         
@@ -15,7 +15,8 @@ const postVideogame = async (req, res) =>{
                 description,
                 image,
                 release,
-                rating
+                rating,
+                devs
             }
         })
 
@@ -39,7 +40,7 @@ const postVideogame = async (req, res) =>{
                 return res.status(200).send(newVideogame);
         }
 
-        return res.status(500).json({ message: `El videojuego ${name} ya existe en la base de datos` });
+        return res.status(400).json({ message: `El videojuego ${name} ya existe en la base de datos` });
     } catch (error) {
         return res.status(500).send(error.message);
     }

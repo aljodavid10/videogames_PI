@@ -27,6 +27,10 @@ const videogame = (sequelize) => {
       type: DataTypes.DECIMAL,
       allowNull: false
     },
+    devs: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
   });
 };
 
